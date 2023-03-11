@@ -4,10 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables and Forms</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <main>
-      <!-- Complete the Exercises HERE -->
+      <h1>Soda Vendor</h1>
+      <section>
+        <h2>Soda Information</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Drink</th>
+              <th>Total Servings</th>
+              <th>Serving Size</th>
+              <th>Calories Per Serving</th>
+              <th>Carbs Per Serving</th>
+              <th>Sugars Per Serving</th>
+              <th>Sodium Per Serving</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>Coca Cola</td>
+                <td>1 Serving</td>
+                <td>1 Can</td>
+                <td>140</td>
+                <td>11.2g</td>
+                <td>39g</td>
+                <td>45mg</td>
+              </tr>
+              <tr>
+                <td>Pepsi</td>
+                <td>1 Serving</td>
+                <td>1 Can</td> 
+                <td>150</td>
+                <td>41g</td>
+                <td>41g</td>
+                <td>30mg</td>
+              </tr>
+              <tr>
+                <td>Coca Cola Zero</td>
+                <td>1 Serving</td>
+                <td>1 Can</td>
+                <td>0</td>
+                <td>0g</td>
+                <td>0g</td>
+                <td>40mg</td>
+              </tr>
+              <tr>
+                <td>Dr. Pepper</td>
+                <td>1 Serving</td>
+                <td>1 Can</td>
+                <td>150</td>
+                <td>40g</td>
+                <td>41g</td>
+                <td>16mg</td>
+              </tr>
+              <tr>
+                <td>Mountain Dew</td>
+                <td>1 Serving</td>
+                <td>1 Can</td>
+                <td>170</td>
+                <td>29g</td>
+                <td>46g</td>
+                <td>60mg</td>
+              </tr>
+            </tbody>
+            </tbody>
+          </thead>
+        </table>
+      </section>
+      <section>
+        <h2>Add Soda Info</h2>
+        <form>
+          <fieldset><label for="drinkName">Name</label><input type="text" name="drinkName" id="drinkName"></fieldset>
+          <fieldset><label for="totalServings">Total Servings</label><input type="number" name="totalServings" id="totalServings"></fieldset>
+          <fieldset><label for="servingSize">Serving Size</label><input type="number" name="servingSize" id="servingSize"></fieldset>
+          <fieldset><label for="calories">Calories</label><input type="number" name="calories" id="calories"></fieldset>
+          <fieldset><label for="carbs">Carbs</label><input type="text" name="carbs" id="carbs"></fieldset>
+          <fieldset><label for="sugars">Sugars</label><input type="text" name="sugars" id="sugars"></fieldset>
+          <fieldset><label for="sodium">Sodium</label><input type="text" name="sodium" id="sodium"></fieldset>
+          <button type="submit">Add Info</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
